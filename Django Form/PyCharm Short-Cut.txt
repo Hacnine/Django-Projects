@@ -1,0 +1,9 @@
+
+TO Enable and Disable Multiple Cursor
+    To enable: Shift+Ctrl+Alt+J
+    To disable: SHIFT+ALT+INSERT
+
+To get parameter information of method etc.
+    Ctrl+P
+
+Press Ctrl+Shift+I (View | Quick Definition)

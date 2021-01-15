@@ -1,0 +1,12 @@
+{% extends 'core/base.html' %}
+{% block title %} {{ block.super }} Home {% endblock title %}
+
+
+{% block content %}
+<h2>You are in {{django}} Home</h2>
+
+{% include 'core/top_courses.html' with p='PHP'  %}
+{% include 'core/top_courses.html' with p='C' only %}
+
+
+{% endblock content %}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+
+{% if forms %}
+<h1>Please Registration for log in.</h1>
+<form action="" method="get"></form>
+
+    <input type="submit" value="Submit">
+
+<form/>
+
+<form action="" method="get"></form>
+
+    <div>
+        <h3>Without using loop</h3>
+        <lable for="{{ form.name.id_for_label }}">Your Name: </lable>
+
+            {{ forms }}
+            {{ forms.name }}
+            {{ forms.name.label_tag }}
+            {{ forms.email }}
+            {{ forms.name.label }} <br>
+
+            {{ forms.name.value }} <br>
+            {{ forms.name.html_name }}<br>
+            {{ forms.name.help_text }}<br>
+            {{ forms.name.field.required }}<br>
+
+    </div>
+
+<div>
+    <h3>Without using loop</h3>
+    <h3>Not to see hidden fileds</h3>
+{% for field in forms.visible_fields %}
+    {{ field.label }} <br>
+     {{ field }} <br>
+    {% endfor %}
+
+      <h3>to see hidden fileds</h3>
+    {% for hidden in forms.hidden_fields %}
+    {{ hidden.label }} <br>
+     {{ hidden }} <br>
+    {% endfor %}
+</div>
+    </div>
+
+
+
+<form/>
+{% else %}
+    <h4>form doesn't exist</h4>
+{% endif %}
+
+</div>
+</body>
+</html>

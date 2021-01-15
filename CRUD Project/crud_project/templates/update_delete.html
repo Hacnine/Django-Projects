@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h4 class="text-center alert alert-info">Update user information</h4>
+
+<div class="row">
+  <div class="col-sm-5 ">
+
+    <form action="" method="post">
+
+        {% csrf_token %}
+        {{ forms.as_p }}
+        <input type="submit" class="btn btn-success" value="Update">
+       <a href="{% url 'addshow'  %}" class="btn btn-primary">Home</a>
+
+
+    </form>
+  </div>
+
+
+</div>
+
+{% endblock content %}

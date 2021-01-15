@@ -1,0 +1,66 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+{% block corecss %}
+<link rel="stylesheet" href="{% static 'css/base.css' %}">
+{% endblock corecss %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Other{% endblock title %}</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="/">Home</a>
+
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+
+       <li class="nav-item">
+      <a class="nav-link" href="{% url 'aboutus' %}">About</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="/cor/course">Course</a>
+    </li>
+
+      <li class="nav-item">
+      <a class="nav-link" href="{% url 'courseone' %}">Course</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 3</a>
+    </li>
+
+      <li><i class='fas fa-apple-alt' style='font-size:36px'></i></li>
+
+  </ul>
+</nav>
+
+
+
+
+        <button type="button" class="btn btn-primary">Home</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-link">Link</button>
+        <button style='font-size:24px'>Button <i class='fas fa-apple-alt'></i></button>
+
+
+{% block content %}{% endblock content %}
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/jQuery.js' %}"></script>
+<script src="{% static 'js/popper.js' %}"></script>
+
+
+
+</body>
+</html>

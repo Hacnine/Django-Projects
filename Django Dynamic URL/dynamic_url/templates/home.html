@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+<a href=""></a>
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+</head>
+<body>
+
+<h2>This home template</h2>
+<a href="{% url 'detail' 1 %}"> First Employee</a>
+<a href="{% url 'detail' 2 %}"> Second Employee</a>
+
+
+</body>
+</html>
+
+ {% endblock content %}

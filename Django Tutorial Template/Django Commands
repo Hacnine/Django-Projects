@@ -1,0 +1,26 @@
+pip install django
+
+To create a package
+django-admin startproject (package name) .
+
+To run server
+python manage.py runserver
+
+To Stop Server
+ctrl + c
+
+To create a new package/application
+python manage.py startapp products
+
+To create Database and Make Migration
+python manage.py makemigrations
+
+And the migrate`
+python manage.py migrate
+
+To Create Admin Email and Password
+python manage.py createsuperuser
+
+To create a new application
+python manage.py startapp myshop
+python manage.py startapp yourshop

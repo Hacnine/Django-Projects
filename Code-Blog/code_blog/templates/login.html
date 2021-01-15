@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <form action="" method="POST" novalidate>
+        {% csrf_token %}
+        {% for form in forms %}
+        {{ form.label_tag }}
+        <p>{{form}}</p>
+        <small class="text-danger">{{ form.errors|striptags }}</small>
+        {% endfor %}
+
+        <input type="submit" value="Sign Up" class="btn btn-primary" >
+  </form>
+
+     {% if forms.non_field_errors %}
+            {% for error in forms.non_field_errors %}
+                {{ error }}
+            {% endfor %}
+        {% endif %}
+
+
+
+{% endblock content %}

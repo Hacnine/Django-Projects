@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+    #detail{
+
+    background-color: white;
+
+    }
+</style>
+
+<div id="detail">
+    <h1>Profile details</h1>
+<form  action="" method="POST">
+    {{ forms.as_p }}
+</form>
+<a href="{% url 'profile' %}">Profile</a>
+</div>
+{% endblock content %}

@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %} Add {% endblock title %}
+
+{% block content %}
+  <div class="row">
+      <div class="col-sm-4">
+          <h4 class="text-center alert alert-info">Add New Student</h4>
+          <form action="" method="POST" novalidate>
+         {% csrf_token %}
+         {{ models.as_p }}
+        <input class="btn btn-success" type="submit" value="Add">
+
+  </form>
+      </div>
+
+       <div class="col-sm-7 offset-1">
+          <h4 class="text-center alert alert-info">Show Student</h4>
+          {% if users %}
+
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                    {% for user in users %}
+
+                          <tr>
+                            <td>{{ user.id }}</td>
+                            <td>{{ user.name }}</td>
+                            <td>{{ user.email }}</td>
+                            <td>{{ user.password }}</td>
+                            <td>
+                                  <a href="{% url 'editupdate' user.id %}" class="btn btn-warning btn-sm">Edit</a>
+
+                                  <form action="{% url 'deletedata' user.id %}" method="post" class="d-inline">
+                                      {% csrf_token %}
+                                      <input type="submit" class="btn btn-danger btn-sm" value="Delete">
+                                  </form>
+
+                            </td>
+                          </tr>
+
+                    {% endfor %}
+            </tbody>
+  </table>
+
+
+           {% else %}
+           <h4 class="text-center alert alert-warning">No Records</h4>
+           {% endif %}
+
+      </div>
+
+  </div>
+{% endblock content %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="row">
+  <div class="col-sm-6 ">
+
+    <form action="" method="post">
+
+        {% csrf_token %}
+        {{ forms.as_p }}
+        <input type="submit" class="btn btn-success" value="Update">
+       <a href="{% url 'addshow'  %}" class="btn btn-primary">Home</a>
+
+
+    </form>
+  </div>
+
+     <div class="col-sm-6 ">
+    <form action="" method="post">
+
+        {% csrf_token %}
+        {{ forms2.as_p }}
+        <input type="submit" class="btn btn-success" value="Update">
+       <a href="{% url 'addshow'  %}" class="btn btn-primary">Home</a>
+
+    </form>
+  </div>
+
+</div>
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="col-sm-10">
+    <h3 class="my-5">Update Post</h3>
+</div>
+
+<form action="" method="post" novalidate>
+    {% csrf_token %}
+    {{ forms.as_p }}
+
+    <input type="submit" class="btn btn-success" value="Update">
+    <a href= "{% url 'dashboard' %}" class="btn btn-success">Cancel</a>
+
+</form>
+
+{% endblock content %}

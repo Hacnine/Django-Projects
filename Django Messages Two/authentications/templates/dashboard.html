@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Dashboard</h2>
+ {% if perms.authentications.delete_blog
+   and perms.authentications.add_blog and perms.authentications.view_blog %}
+
+<input type="button" value="Add"> <br> <br>
+<input type="button" value="Change"> <br> <br>
+<input type="button" value="Delete"> <br> <br>
+<input type="button" value="View"> <br> <br>
+ {% endif %}
+
+<a  type="button" class="btn btn-outline-danger" href="{% url 'logout' %}">Log Out</a>
+{% endblock content %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--    Basic for loop-->
+<!--    {{names}}-->
+<!--    {% for name in names reversed %}-->
+<!--    <li>{{name}} </li>-->
+<!--    {% empty %}-->
+<!--    <h4>Its empty</h4>-->
+<!--    {% endfor %}-->
+
+    {% for name in names %}
+    {{forloop.counter}} {{name}} <br>
+    {% endfor %}
+<br>
+    {% for name in names %}
+    {{forloop.counter0}} {{name}} <br>
+    {% endfor %}
+<br>
+    {% for name in names %}
+    {{forloop.revcounter0}} {{name}} <br>
+    {% endfor %}
+
+<br>
+    {% for name in names %}
+    {{forloop.revcounter}} {{name}} <br>
+    {% endfor %}
+
+</body>
+</html>

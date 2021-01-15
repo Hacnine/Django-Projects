@@ -1,0 +1,55 @@
+{% block content %}
+{% load static %}
+<img src="{% static 'images/img.png' %}" alt="Code-Life" />
+<img src="{% get_static_prefix  %} images/img.png" alt="Code-Life" />
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+body {
+  background-color: lightblue;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+    {% if check %}
+    <h1>Mellow "if" </h1>
+    {% endif %}
+
+    {% if check and string %}
+    <p>Mellow "if with and" </p>
+    {% endif %}
+
+    {% if not string %}
+    <h3>Mellow "if with not" </h3>
+    {% endif %}
+
+    {% if string == 'Django' and check == True %}
+    <h3>Mellow "Django" </h3>
+    {% endif %}
+
+    {% if string == 'Django' %}
+    <h2>{{string}}</h2>
+    {% else %}
+    <h2>else</h2>
+    {% endif %}
+</body>
+</html>
+
+{% endblock %}

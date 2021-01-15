@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Session{% endblock title %}
+{% block content %}
+
+<h4>Get session age</h4>
+<h5>Cookie age is: {{ request.session.get_session_cookie_age }}</h5>
+<h5>Cookie expiry age is: {{ request.session.get_expiry_age }}</h5>
+<h5>Cookie age is: {{ request.session.get_expiry_date }}</h5>
+<h5>Cookie age is: {{ request.session.get_expire_at_browser_close}}</h5>
+
+{% endblock content %}

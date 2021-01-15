@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+
+<div class="container text-warning"><h3>Mellow Student</h3>
+
+    <style>
+        th, td {
+        border: 1px white solid;
+        }
+    </style>
+    {% if students %}
+    <h1>Show Data</h1>
+    <table>
+        <tr class="text-warning text-center">
+            <th>ID</th>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Content</th>
+            <th></th>
+        </tr>
+        
+         {% for student in students %}
+        <tr class="text-white  text-center ">
+            <td><h5>{{ student.id }}</h5></td>
+            <td class="text-center">{{ student.employee_id }}</td>
+            <td>{{ student.name }}</td>
+            <td>{{ student.email }} </td>
+            <td class="text-center">{{ student.subject }}</td>
+        </tr>
+
+    {% endfor %}
+
+    </table>
+   
+
+{% else %}
+    <h1>No Data</h1>
+{% endif %}
+
+
+</div>
+
+{% endblock content %}

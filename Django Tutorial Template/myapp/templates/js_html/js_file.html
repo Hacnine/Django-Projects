@@ -1,0 +1,20 @@
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'js_css/js_css.css' %}" />
+<script src="{% static 'js/js_file.js' %}"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <h1>Mellow JavaScript</h1>
+ <form action="">
+     <input type="button" value="Click" onclick="disp()" />
+ </form>
+</body>
+</html>
+
+{% endblock %}

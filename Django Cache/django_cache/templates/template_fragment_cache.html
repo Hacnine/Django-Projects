@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% load cache %}
+{% block title %}
+{% endblock title %}
+
+{% block content %}
+<h1>Your are in Template Fragment Cache 1.</h1>
+<h1>Your are in Template Fragment Cache 2.</h1>
+{% cache 30 course %}
+<h1>Your are in Template Fragment(change herer to see effects) Cache 3.</h1>
+<h1>Your are in Template Fragment Cache 4.</h1>
+{% endcache 30 course %}
+{% endblock content %}

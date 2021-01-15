@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Session{% endblock title %}
+{% block content %}
+<h2>You are in Get session page.</h2>
+<h3>{{ name }}</h3>
+<h3>{{ last_name }}</h3> <br><hr>
+
+
+<h4>To get key</h4>
+{% for key in request.session.keys %}
+    Key is: {{ key }} <br>
+{% endfor %} <hr>
+
+<h4>To get Items</h4>
+{% for item in items %}
+    Item is: {{ item }} <br>
+{% endfor %} <hr>
+
+<h4>To get key and value</h4>
+{% for key, value in items %}
+    Item is: {{ key }} {{value}} <br>
+{% endfor %} <hr>
+
+default age is {{ age }}
+
+<h4>Get session age</h4>
+<h5>Cookie age is: {{ request.session.get_session_cookie_age }}</h5>
+<h5>Cookie expiry age is: {{ request.session.get_expiry_age }}</h5>
+<h5>Cookie age is: {{ request.session.get_expiry_date }}</h5>
+<h5>Cookie age is: {{ request.session.get_expire_at_browser_close}}</h5>
+
+{% endblock content %}

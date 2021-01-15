@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block content %}
+    <form action="" method="POST" novalidate>
+        {% csrf_token %}
+
+        {% if forms.non_field_errors %}
+            {% for error in forms.non_field_errors %}
+                {{ error }}
+            {% endfor %}
+        {% endif %}
+
+
+        {% for form in forms %}
+            {{ form.label_tag }}
+            <p>{{form}}</p>
+            <p>{{ form.errors|striptags }}</p>
+        {% endfor %}
+
+        <input class="btn btn-success" type="submit" value="Sign Up">
+  </form>
+        {% csrf_token %}
+
+    {% if messages %}
+      {% for message in messages %}
+
+            <p  {% if message.tags %} class="alert-{{ message.tags }}" {% endif %} > {{ message }}</p>
+
+      {% endfor %}
+    {% endif %}
+{% endblock content %}

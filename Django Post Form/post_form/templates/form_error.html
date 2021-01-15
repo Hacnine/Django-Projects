@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{%  block content %}
+
+    <style>
+        .errorlist{
+        list-style-type:none;
+        color:red;
+        font-size: 10px;
+        padding: 0;
+        }
+    </style>
+
+<form action="" method="POST" novalidate>
+         {% csrf_token %}
+{{ error.non_field_errors }}
+    {% for field in error %}
+    <div>
+            {{ field.label_tag }} {{field}} <span class="errorlist">{{ field.errors|striptags }}</span>
+    </div>
+    {% endfor %}
+
+     {% for err in field.errors %}
+    <span class="errorlist">{{err}}</span>
+            {% endfor %}
+
+    <input type="submit" value="Submit">
+</form>
+{% endblock content %}

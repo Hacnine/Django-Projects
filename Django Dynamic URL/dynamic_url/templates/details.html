@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Employee Detail</h2>
+<h4>{{id}}</h4> <h4>{{name}}</h4>
+
+{% block detailcontent %}
+<a href="{% url 'sub_details' 1 1%}"> Sub Employee</a>
+<a href="{% url 'sub_details' 2 2%}"> Sub Employee</a>
+
+{% endblock detailcontent %}
+
+<a href="{% url 'home' %}">Back to home</a>
+{% endblock content %}
+

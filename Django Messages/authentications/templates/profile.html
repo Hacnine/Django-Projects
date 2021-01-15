@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <h2>Mellow {{name}}</h2>
+    <h4 class="">User List</h4>
+        {% for user in user_lists %}
+<a href="{% url 'detail' user.id %}"> {{ user.username }}</a> <br>
+
+        {% endfor %}
+
+
+    {% if messages %}
+      {% for message in messages %}
+
+<!--            <span class="{{ message.tags }}"> {{ message }}</span>-->
+<!--            <span  {% if message.tags %} class="{{ message.tags }}" {% endif %} > {{ message }}</span>-->
+            <p  {% if message.tags %} class="alert-{{ message.tags }}" {% endif %} > {{ message }}</p>
+
+      {% endfor %}
+    {% endif %}
+
+<form action="" method="POST" novalidate>
+        {% csrf_token %}
+        {{ form2.as_p }}
+
+        {% if forms.non_field_errors %}
+            {% for error in forms.non_field_errors %}
+                {{ error }}
+            {% endfor %}
+        {% endif %}
+
+
+        {% for form in forms %}
+            {{ form.label_tag }}
+            {{ form.initial }}
+
+            <p>{{ form.errors|striptags }}</p>
+        {% endfor %}
+
+
+ {% if perms.authentications.delete_blog and perms.authentications.add_blog and perms.authentications.view_blog %}
+<h2>Dashboard</h2>
+
+<input type="button" value="Add"> <br> <br>
+<input type="button" value="Change"> <br> <br>
+<input type="button" value="Delete"> <br> <br>
+<input type="button" value="View"> <br> <br>
+ {% endif %}
+
+
+</form>
+
+<a  type="button" class="btn btn-outline-warning" href="{% url 'except_old' %}">Change Password Two</a>
+
+<a  type="button" class="btn btn-outline-danger" href="{% url 'logout' %}">Log Out</a>
+{% endblock content %}

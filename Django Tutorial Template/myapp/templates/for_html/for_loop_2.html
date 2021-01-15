@@ -1,0 +1,49 @@
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet"  href="{% static 'for_2.css' %}">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- for student -->
+<br>
+    {{student}}
+<br/>
+
+<br>
+    {{student.stu1}}
+<br/>
+
+<br>
+    <h2>{{student.stu1.name}}</h2>
+<br/>
+
+<br>
+    {% for key, value in student.items %}
+<!--    {{key}} = {{value}} <br>-->
+    {% for k , v in value.items %}
+<!--    {{k}} = {{v}} <br>-->
+    <h3>{{ forloop.parentloop.counter0}} {{k}} = {{v}}</h3><br>
+
+    {% endfor %}
+    {% endfor %}
+<br/>
+
+
+<!-- for data -->
+<br>
+    {% for key, value in data.items %}
+    {{key}} = {{value}} <br>
+
+    {% endfor %}
+<br/>
+</body>
+</html>
+
+{% endblock %}
