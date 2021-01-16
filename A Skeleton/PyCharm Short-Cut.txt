@@ -13,12 +13,15 @@ You can remove spaces with SHIFT TAB
 
 Press Ctrl+Shift+I (View | Quick Definition)
 
+To return to the last place where you made changes in code, press Ctrl+Shift+Backspace or select Navigate | Last Edit Location from the main menu.
+If you press Ctrl+Shift+Backspace several times, you see later deeper into your changes history.
+
 Scroll code fast: Install codeglance plugin
 
 Press Ctrl+E (View | Recent Files) to view the list of recently opened files
 
 
-    Jump to the last active position
+Jump to the last active position
     Press F12.
 
 Switch between tabs﻿
