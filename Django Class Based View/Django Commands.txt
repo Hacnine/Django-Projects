@@ -1,0 +1,35 @@
+pip install django
+
+To create a package
+django-admin startproject  .
+
+To run server
+python manage.py runserver
+
+To Stop Server
+ctrl + c
+
+To create a new package/application
+python manage.py startapp products
+
+To use database cache
+python manage.py createcachetable
+
+To Build Database and Make Migration
+python manage.py makemigrations
+
+To migrate
+python manage.py migrate
+
+To Display The SQL statement for migration
+python manage.py sqlmigrate application_name(products) dbfile_name(0001)
+
+List project migration and their status
+python manage.py showmigrations
+
+To Create Admin Email and Password
+python manage.py createsuperuser
+
+To create a new application
+python manage.py startapp myshop
+python manage.py startapp yourshop
