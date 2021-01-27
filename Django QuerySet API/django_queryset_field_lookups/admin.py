@@ -1,7 +1,7 @@
 from django.contrib import admin
-from django_query_set.models import Student
+from django_queryset_field_lookups.models import StudentTwo
 
 
-@admin.register(Student)
-class StudentAdmin(admin.ModelAdmin):
-    list_display = ['id', 'name', 'roll', 'city', 'marks', 'pass_date']
+@admin.register(StudentTwo)
+class StudentTwoAdmin(admin.ModelAdmin):
+    list_display = ['id', 'name', 'roll', 'city', 'marks', 'admission_datetime', ]

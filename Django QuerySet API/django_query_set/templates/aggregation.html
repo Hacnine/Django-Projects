@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block title %}
+{% endblock title %}
+
+{% block content %}
+<h1>Aggregation: Student Info</h1>
+
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Average</th>
+        <th>Summation</th>
+        <th>minimum</th>
+        <th>maximum</th>
+        <th>count</th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>{{ average.marks__avg}}</td>
+        <td>{{ summation.marks__sum }}</td>
+        <td>{{ minimum.marks__min }}</td>
+        <td>{{ maximum.marks__max }}</td>
+        <td>{{ count.marks__count }}</td>
+
+    </tr>
+
+
+    </tbody>
+
+</table>
+
+<h1>Q Objects: Student Info</h1>
+
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>City</th>
+        <th>Pass Date</th>
+        <th>Marks</th>
+    </tr>
+    </thead>
+    <tbody>
+
+    {% for data in student_data2 %}
+    <tr>
+        <td>{{ data.id}}</td>
+        <td>{{ data.name}}</td>
+        <td>{{ data.roll}}</td>
+        <td>{{ data.city}}</td>
+        <td>{{ data.pass_date}}</td>
+        <td>{{ data.marks}}</td>
+
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+
+{% endblock content %}
