@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Student</h2>
+<ul>
+    <!--  for custom context name 'students'  -->
+    <!--  {% for student in students %}-->
+    <!--    {% endfor %}-->
+
+    {% for student in student_list %}
+    <li>{{ student.name }}</li>
+    <li>{{ student.roll }}</li>
+    <li>{{ student.course }}</li>
+    {% endfor %}
+</ul>
+
+<ul>
+
+    {% for student in freshers %}
+    <li>{{ student.name }}</li>
+    <li>{{ student.roll }}</li>
+    <li>{{ student.course }}</li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
