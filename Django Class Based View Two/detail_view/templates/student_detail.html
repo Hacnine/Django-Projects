@@ -6,7 +6,13 @@
 <!--<li>{{ student.roll }}</li>-->
 <!--<li>{{ student.course }}</li>-->
 
-<li>{{ stu.name }}</li>
-<li>{{ stu.roll }}</li>
-<li>{{ stu.course }}</li>
+{{ student.name }}
+{{ student.roll }}
+{{ student.course }}
+
+<hr>
+
+{% for student in all_stu %}
+<li><a href="{% url 'detail' student.id %}">{{ student.name }}</a></li>
+{% endfor %}
 {% endblock content %}

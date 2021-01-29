@@ -8,11 +8,8 @@
 
 <h2>Student</h2>
 <ul>
-
-
     {% for student in student_list %}
     <li><a href="{% url 'detail' student.id %}">{{ student.name }}</a></li>
-
     {% endfor %}
 </ul>
 </body>

@@ -21,9 +21,10 @@ from detail_view.views import StudentDetailView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('generic_view.urls')),
+    path('', include('list_view.urls')),
     # path('detail/<int:pk>/', views.StudentDetailView.as_view(), name='detail')
     path('detail/<int:idd>/', views.StudentDetailView.as_view(), name='detail'),
-    path('student2/', views.StudentLstView.as_view(), name='student')
+    path('student2/', views.StudentLstView.as_view(), name='student'),
 
+    path('contact/', include('form_view.urls'))
 ]

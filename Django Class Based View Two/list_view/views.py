@@ -1,6 +1,6 @@
 from django.views.generic.list import ListView
 
-from generic_view.models import Student
+from list_view.models import Student
 
 
 # for list view

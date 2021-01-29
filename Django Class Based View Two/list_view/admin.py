@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from generic_view.models import Student
+from list_view.models import Student
 
 
 @admin.register(Student)
