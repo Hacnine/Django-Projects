@@ -26,5 +26,7 @@ urlpatterns = [
     path('detail/<int:idd>/', views.StudentDetailView.as_view(), name='detail'),
     path('student2/', views.StudentLstView.as_view(), name='student'),
 
-    path('contact/', include('form_view.urls'))
+    path('contact/', include('form_view.urls')),
+    path('class_view/', include('class_view.urls'))
+
 ]
