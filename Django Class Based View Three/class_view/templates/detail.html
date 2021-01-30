@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Student Details</h3>
+
+{{ classemployee.name }}
+{{ classemployee.email }}
+
+<hr>
+
+<!--{% for student in all_stu %}-->
+<!--<li><a href="{% url 'detail' student.id %}">{{ student.name }}</a></li>-->
+<!--{% endfor %}-->
+{% endblock content %}
