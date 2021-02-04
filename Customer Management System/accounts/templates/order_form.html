@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% load static %}
+{% block title %} Order Form {% endblock title %}
+
+{% block content %}
+
+<form action="" method="post">
+    {% csrf_token %}
+    {{ forms.as_p }}
+    <input type="submit" value="Submit">
+</form>
+
+{% endblock content %}

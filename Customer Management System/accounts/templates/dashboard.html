@@ -1,10 +1,9 @@
 {% extends 'base.html' %} {% load static %}
-{% block title %}
-{% endblock title %}
+{% block title %} Dashboard {% endblock title %}
 
 {% block content %}
 {% include 'status.html' %}
-<link rel="stylesheet"  href="{% static 'CSS/styles.css' %}">
+<link rel="stylesheet" href="{% static 'CSS/styles.css' %}">
 
 <div class="row">
     <div class="col-md-5">
@@ -18,6 +17,15 @@
                     <th>Customer</th>
                     <th>Order</th>
                 </tr>
+
+                {% for customer in customers %}
+                <tr>
+                    <td><a class="btn btn-primary btn-sm" href="{% url 'customer' customer.id %}">View</a></td>
+                    <td>{{customer.name}}</td>
+                    <td>{{customer.phone}}</td>
+                </tr>
+                {% endfor %}
+
             </table>
         </div>
     </div>
@@ -26,7 +34,7 @@
         <h5>LAST 5 ORDERS</h5>
         <br>
         <div class="card card-body">
-            <a href="" class="btn btn-primary btn-sm btn-block">Create Order</a>
+            <a href="{% url 'create_order' %}" class="btn btn-primary btn-sm btn-block">Create Order</a>
             <table class="table table-sm">
                 <tr>
                     <th>Product</th>
@@ -35,6 +43,18 @@
                     <th>Update</th>
                     <th>Remove</th>
                 </tr>
+
+                {% for i in orders %}
+                <tr>
+                    <td>{{i.product}}</td>
+                    <td>{{i.date_created}}</td>
+                    <td>{{i.status}}</td>
+                    <td><a href="{% url 'update_order' i.id %}">Update</a></td>
+                    <td><a href="">Delete</a></td>
+
+                </tr>
+                {% endfor %}
+
             </table>
         </div>
     </div>
