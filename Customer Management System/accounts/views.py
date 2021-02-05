@@ -35,6 +35,12 @@ def customer(request, pks):
     return render(request, 'customer.html', context)
 
 
+def customer_list(request):
+    customers = Customer.objects.all()
+    context = {'customers': customers}
+    return render(request, 'customer_list.html', context)
+
+
 #
 #
 # def create_update(request, em_id):
@@ -86,3 +92,12 @@ def update_order(request, order_id):
 
         # form = OrderForm(instance=updates)
     return render(request, 'order_form.html', {'forms': form})
+
+
+def delete_data(request, emp_id):
+    pi = Order.objects.get(pk=emp_id)
+    context = {'item': pi}
+    if request.method == 'POST':
+        pi.delete()
+        return redirect('/')
+    return render(request, 'delete.html', context)
