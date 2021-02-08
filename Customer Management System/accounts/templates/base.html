@@ -3,7 +3,7 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-    <img src="{% static '/images/logo.png' %}" alt="">
+    <a href="{% url 'dashboard' %}"><img src="{% static '/images/logo.png' %}" ></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -12,7 +12,6 @@
         <div class="navbar-nav">
             <a class="nav-item nav-link" href="{% url 'dashboard' %}">Home</a>
             <a class="nav-item nav-link" href="{% url 'products' %}">Products</a>
-            <a class="nav-item nav-link" href="{% url 'customer_list' %}">Customer List</a>
 
         </div>
     </div>

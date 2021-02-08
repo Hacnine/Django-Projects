@@ -30,3 +30,8 @@ To move between tabs, press Alt+Right or Alt+Left.
 You can also switch between recently viewed tabs or files.
 
 In the editor, press Ctrl+Tab. Keep pressing Ctrl for the Switcher window to stay open. Use Tab to switch between tabs and other files.
+
+
+Press Ctrl+Shift+F7 (Edit | Find | Highlight Usages in File) to quickly highlight usages of a certain variable in the current file.
+Press F3 and Shift+F3 to navigate through the highlighted usages.
+Press Escape to remove highlighting.
