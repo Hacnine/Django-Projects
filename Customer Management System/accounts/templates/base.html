@@ -3,7 +3,7 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-    <a href="{% url 'dashboard' %}"><img src="{% static '/images/logo.png' %}" ></a>
+    <a href="{% url 'dashboard' %}"><img src="{% static '/images/logo.png' %}"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -16,6 +16,17 @@
         </div>
     </div>
 
+
+    <ul class="navbar-nav ml-auto">
+        <span id="profile-name" class="nav-link">{{ request.user }} </span>
+
+        <li><a class="nav-link" href="{% url 'logout' %}"><i class="fas fa-sign-out-alt fa-lg"></i> Log Out</a></li>
+
+        <li><a class="nav-link" href="{% url 'register' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+        </li>
+        <li><a class="nav-link" href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+    </ul>
 
 </nav>
 <div class="container">

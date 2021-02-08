@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %} login {% endblock title %}
+
+{% block content %}
+<br>
+
+<div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+        <div class="card card-body">
+            <form action="" method="POST" novalidate>
+                {% csrf_token %}
+                {% for form in forms %}
+                {{ form.label_tag }}
+                <p>{{form}}</p>
+                {% endfor %}
+
+                {% for message in messages %}
+                <p>{{ message }}</p>
+                {% endfor %}
+
+                <input type="submit" value="Sign Up" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+
+    <div class="col-md-4>
+    </div>
+
+</div>
+
+{% endblock content   %}
