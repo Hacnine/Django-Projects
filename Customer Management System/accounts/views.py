@@ -4,49 +4,46 @@ from django.contrib.auth.decorators import login_required
 from django.forms import inlineformset_factory
 from django.shortcuts import render, redirect
 
+from accounts.decorators import unauthenticated_user
 from accounts.filters import OrderFilter
 from accounts.forms import OrderForm, CreateUserForm, LoginForm
 from accounts.models import Product, Order, Customer
 
 
+@unauthenticated_user
 def register(request):
-    if request.user.is_authenticated:
-        return redirect('/')
 
-    else:
-        form = CreateUserForm()
+    form = CreateUserForm()
 
-        if request.method == 'POST':
-            form = CreateUserForm(request.POST)
+    if request.method == 'POST':
+        form = CreateUserForm(request.POST)
 
-            if form.is_valid():
-                form.save()
+        if form.is_valid():
+            form.save()
 
-                user = form.cleaned_data.get('username')
-                messages.success(request, f'Account is created for {user}')
-                return redirect('/')
-        context = {'form': form}
-        return render(request, 'register.html', context)
+            user = form.cleaned_data.get('username')
+            messages.success(request, f'Account is created for {user}')
+            return redirect('/')
+    context = {'form': form}
+    return render(request, 'register.html', context)
 
 
+@unauthenticated_user
 def login_page(request):
-    if request.user.is_authenticated:
-        return redirect('/')
 
-    else:
-        forms = LoginForm()
-        context = {'forms': forms}
-        if request.method == 'POST':
-            username = request.POST.get('username')
-            password = request.POST.get('password')
-            user = authenticate(request, username=username, password=password)
-            if user is not None:
-                login(request, user)
-                return redirect('/')
-            else:
-                messages.info(request, 'User name or password is not correct')
+    forms = LoginForm()
+    context = {'forms': forms}
+    if request.method == 'POST':
+        username = request.POST.get('username')
+        password = request.POST.get('password')
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            return redirect('/')
+        else:
+            messages.info(request, 'User name or password is not correct')
 
-        return render(request, 'login_page.html', context)
+    return render(request, 'login_page.html', context)
 
 
 def user_logout(request):
