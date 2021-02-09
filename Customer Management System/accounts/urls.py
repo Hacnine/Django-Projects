@@ -6,7 +6,7 @@ from .views import home, customer, products, create_order, update_order, delete_
 urlpatterns = [
     path('', home, name='dashboard'),
     path('login/', login_page, name='login'),
-    path('user/', user_profile, name='user_profile'),
+    path('user/', user_profile, name='user-page'),
     path('logout/', user_logout, name='logout'),
     path('register/', register, name='register'),
     path('products/', products, name='products'),

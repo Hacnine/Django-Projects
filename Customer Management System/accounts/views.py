@@ -1,10 +1,11 @@
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import Group
 from django.forms import inlineformset_factory
 from django.shortcuts import render, redirect
 
-from accounts.decorators import unauthenticated_user, allowed_user
+from accounts.decorators import unauthenticated_user, allowed_user, admin_only
 from accounts.filters import OrderFilter
 from accounts.forms import OrderForm, CreateUserForm, LoginForm
 from accounts.models import Product, Order, Customer
@@ -19,10 +20,12 @@ def register(request):
         form = CreateUserForm(request.POST)
 
         if form.is_valid():
-            form.save()
+            user = form.save()
+            username = form.cleaned_data.get('username')
 
-            user = form.cleaned_data.get('username')
-            messages.success(request, f'Account is created for {user}')
+            group = Group.objects.get(name='customers')
+            user.groups.add(group)
+            messages.success(request, f'Account is created for {username}')
             return redirect('/')
     context = {'form': form}
     return render(request, 'register.html', context)
@@ -46,6 +49,8 @@ def login_page(request):
     return render(request, 'login_page.html', context)
 
 
+@login_required(login_url='login')
+@allowed_user(allowed_roles=['customers'])
 def user_profile(request):
     context = {}
     return render(request, 'user_page.html', context)
@@ -75,23 +80,26 @@ def home(request):
 
 
 @login_required(login_url='login')
+@allowed_user(allowed_roles=['admin'])
 def products(request):
     all_product = Product.objects.all()
     context = {'products': all_product}
     return render(request, 'products.html', context)
 
 
+@login_required(login_url='login')
+@allowed_user(allowed_roles=['admin'])
 def customer(request, pks):
     customers = Customer.objects.get(id=pks)
 
     orders = customers.order_set.all()
     order_count = orders.count()
 
-    myFilter = OrderFilter(request.GET, queryset=orders)
-    orders = myFilter.qs
-    print(myFilter.qs)
+    my_filter = OrderFilter(request.GET, queryset=orders)
+    orders = my_filter.qs
+    print(my_filter.qs)
     context = {'customers': customers, 'orders': orders, 'order_count': order_count,
-               'myFilter': myFilter}
+               'my_filter': my_filter}
     return render(request, 'customer.html', context)
 
     # # search product
@@ -135,6 +143,7 @@ def customer_list(request):
     return render(request, 'customer_list.html', context)
 
 
+@login_required(login_url='login')
 @allowed_user(allowed_roles=['admin'])
 def create_order(request, pk):
     order_form_set = inlineformset_factory(Customer, Order, fields=('product', 'status'), extra=5)
