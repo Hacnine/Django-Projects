@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.forms import inlineformset_factory
 from django.shortcuts import render, redirect
 
-from accounts.decorators import unauthenticated_user
+from accounts.decorators import unauthenticated_user, allowed_user
 from accounts.filters import OrderFilter
 from accounts.forms import OrderForm, CreateUserForm, LoginForm
 from accounts.models import Product, Order, Customer
@@ -46,12 +46,18 @@ def login_page(request):
     return render(request, 'login_page.html', context)
 
 
+def user_profile(request):
+    context = {}
+    return render(request, 'user_page.html', context)
+
+
 def user_logout(request):
     logout(request)
     return redirect('/login/')
 
 
 @login_required(login_url='login')
+@allowed_user(allowed_roles=['admin'])
 def home(request):
     orders = Order.objects.all()
     customers = Customer.objects.all()
@@ -129,6 +135,7 @@ def customer_list(request):
     return render(request, 'customer_list.html', context)
 
 
+@allowed_user(allowed_roles=['admin'])
 def create_order(request, pk):
     order_form_set = inlineformset_factory(Customer, Order, fields=('product', 'status'), extra=5)
     customer_id = Customer.objects.get(id=pk)
@@ -147,6 +154,8 @@ def create_order(request, pk):
     return render(request, 'order_form.html', context)
 
 
+@login_required(login_url='login')
+@allowed_user(allowed_roles=['admin'])
 def update_order(request, order_id):
     updates = Order.objects.get(pk=order_id)
     form = OrderForm(instance=updates)
@@ -161,6 +170,8 @@ def update_order(request, order_id):
     return render(request, 'order_form.html', {'formset': form})
 
 
+@login_required(login_url='login')
+@allowed_user(allowed_roles=['admin'])
 def delete_data(request, emp_id):
     pi = Order.objects.get(pk=emp_id)
     context = {'item': pi}
