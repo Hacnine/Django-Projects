@@ -7,7 +7,7 @@ from django.shortcuts import render, redirect
 
 from accounts.decorators import unauthenticated_user, allowed_user, admin_only
 from accounts.filters import OrderFilter
-from accounts.forms import OrderForm, CreateUserForm, LoginForm
+from accounts.forms import OrderForm, CreateUserForm, LoginForm, CustomerForm
 from accounts.models import Product, Order, Customer
 
 
@@ -25,6 +25,8 @@ def register(request):
 
             group = Group.objects.get(name='customers')
             user.groups.add(group)
+
+            # Customer.objects.create(user=user)
             messages.success(request, f'Account is created for {username}')
             return redirect('/')
     context = {'form': form}
@@ -52,8 +54,31 @@ def login_page(request):
 @login_required(login_url='login')
 @allowed_user(allowed_roles=['customers'])
 def user_profile(request):
-    context = {}
-    return render(request, 'user_page.html', context)
+    orders = request.user.customer.order_set.all()
+
+    total_orders = orders.count()
+    delivered = orders.filter(status='Delivered').count()
+    pending = orders.filter(status='Pending').count()
+
+    print('orders', orders)
+    context = {'orders': orders, 'total_orders': total_orders, 'delivered': delivered,
+               'pending': pending}
+    return render(request, 'user_profile.html', context)
+
+
+@login_required(login_url='login')
+@allowed_user(allowed_roles=['customers'])
+def account_settings(request):
+    customer = request.user.customer
+    form = CustomerForm(instance=customer)
+
+    if request.method == 'POST':
+        form = CustomerForm(request.POST, request.FILES, instance=customer)
+        if form.is_valid():
+            form.save()
+
+    context = {'form': form}
+    return render(request, 'account_settings.html', context)
 
 
 def user_logout(request):

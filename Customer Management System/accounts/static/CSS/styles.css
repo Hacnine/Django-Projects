@@ -1,27 +1,27 @@
 #logo{
 		}
 
-		body{
+		body {
 			background-color: #ebeff5;
 		}
 
 
-		#total-orders{
+		#total-orders {
 			background-color: #4cb4c7;
 		}
 
 
-		#orders-delivered{
+		#orders-delivered {
 			background-color: #7abecc;
 		}
 
-		#orders-pending{
+		#orders-pending {
 			background-color: #7CD1C0;
 		}
 
-		#profile-name{
+		#profile-name {
 		font-size: 18px;
 		color: #fff;
-		margin-right: 20px
+		margin-right: 20px;
 		}
 

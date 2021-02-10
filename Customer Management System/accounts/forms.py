@@ -2,8 +2,16 @@ from django import forms
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, UsernameField
 from django.contrib.auth.models import User
 from django.forms import ModelForm
-from django.utils.translation import gettext, gettext_lazy as _
-from accounts.models import Order, Product, Search
+from django.utils.translation import gettext_lazy as _
+
+from accounts.models import Order, Product, Search, Customer
+
+
+class CustomerForm(ModelForm):
+    class Meta:
+        model = Customer
+        fields = '__all__'
+        exclude = ['user']
 
 
 class OrderForm(ModelForm):
