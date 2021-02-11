@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_signals.apps.DjangoCookiesConfig',
     'custom_signals',
+    'denish_ivy_signals.apps.DenishIvySignalsConfig'
+
 
 ]
 
