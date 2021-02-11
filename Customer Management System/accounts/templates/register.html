@@ -1,28 +1,42 @@
-{% extends 'base.html' %}
+{% extends 'base.html' %} {% load static %}
 {% block title %} register {% endblock title %}
 
+
 {% block content %}
-<form action="" method="post" novalidate>
-    {% csrf_token %}
+<br>
 
-    {{form.username.label}}
-    {{ form.username }}
+<div class="row">
+    <div class="col-md-4">
+    </div>
+    <div class="col-md-4">
+        <div class="card card-body">
+            <form action="" method="POST" novalidate>
+                {% csrf_token %}
+
+                <p>{{form.username.label}}</p>
+                <p>{{ form.username }}</p>
+                <p>{{form.email.label}}</p>
+                <p>{{ form.email }}</p>
+                <p>{{form.phone_number.label}}</p>
+                <p>{{ form.phone_number }}</p>
+                <p>{{form.password1.label}}</p>
+                <p>{{ form.password1 }}</p>
+                <p>{{form.password2.label}}</p>
+                <p>{{ form.password2 }}</p>
+
+                {% for message in messages %}
+                <p>{{ message }}</p>
+                {% endfor %}
+
+                <input type="submit" value="Sign Up" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+    </div>
 
 
-    {{form.email.label}}
-    {{ form.email }}
+</div>
 
-
-    {{form.password1.label}}
-    {{ form.password1 }}
-
-    {{form.password2.label}}
-    {{ form.password2 }}
-
-    {{ form.errors }}
-    {% for message in messages %}
-    <p class="">{{ message }} </p>
-    {% endfor %}
-    <input type="submit" name="Sign Up">
-</form>
 {% endblock content   %}

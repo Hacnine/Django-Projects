@@ -33,6 +33,9 @@ class DateForm(ModelForm):
 
 
 class CreateUserForm(UserCreationForm):
+    phone_number = forms.CharField(label='+88 ')
+    fields = ['phone_number', ]
+
     class Meta:
         model = User
         fields = ['username', 'email', 'password1', 'password2']

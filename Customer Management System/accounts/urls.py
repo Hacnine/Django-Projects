@@ -1,3 +1,4 @@
+from django.contrib.auth import views as auth_views
 from django.urls import path
 
 from .views import home, customer, products, create_order, update_order, delete_data, customer_list, login_page, \
@@ -17,6 +18,22 @@ urlpatterns = [
     path('update_order/<str:order_id>', update_order, name='update_order'),
     path('delete/<int:emp_id>/', delete_data, name='deleted'),
     # path('mash/', search_customer, name='mash')
+
+    path('reset_password/',
+         auth_views.PasswordResetView.as_view(template_name="password_reset.html"),
+         name="reset_password"),
+
+    path('reset_password_sent/',
+         auth_views.PasswordResetDoneView.as_view(template_name="password_reset_sent.html"),
+         name="password_reset_done"),
+
+    path('reset/<uidb64>/<token>/',
+         auth_views.PasswordResetConfirmView.as_view(template_name="password_reset_form.html"),
+         name="password_reset_confirm"),
+
+    path('reset_password_complete/',
+         auth_views.PasswordResetCompleteView.as_view(template_name="password_reset_done.html"),
+         name="password_reset_complete"),
 
     # path('update/<int:em_id>/', create_order, name='editupdate'),
 

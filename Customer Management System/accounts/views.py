@@ -22,11 +22,13 @@ def register(request):
         if form.is_valid():
             user = form.save()
             username = form.cleaned_data.get('username')
-
-            group = Group.objects.get(name='customers')
-            user.groups.add(group)
-
-            # Customer.objects.create(user=user)
+            # email = form.cleaned_data.get('email')
+            # phone_number = form.cleaned_data.get('phone_number')
+            #
+            # group = Group.objects.get(name='customers')
+            # user.groups.add(group)
+            #
+            # Customer.objects.create(user=user, name=user.username, email=email, phone=phone_number)
             messages.success(request, f'Account is created for {username}')
             return redirect('/')
     context = {'form': form}
