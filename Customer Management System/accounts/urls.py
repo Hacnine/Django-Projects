@@ -32,7 +32,7 @@ urlpatterns = [
          name="password_reset_confirm"),
 
     path('reset_password_complete/',
-         auth_views.PasswordResetCompleteView.as_view(template_name="password_reset_done.html"),
+         auth_views.PasswordResetCompleteView.as_view(template_name="password_reset_done.html"),  # last added
          name="password_reset_complete"),
 
     # path('update/<int:em_id>/', create_order, name='editupdate'),
