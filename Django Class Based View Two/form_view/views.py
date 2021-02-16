@@ -18,6 +18,5 @@ class ContactFormView(FormView):
         # return HttpResponse('Message sent')
 
 
-
 class SubmitTemplateView(TemplateView):
     template_name = 'submit.html'

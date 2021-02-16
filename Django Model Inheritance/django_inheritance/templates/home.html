@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block title %}
+{% endblock title %}
+
+{% block content %}
+<h1>Student Info</h1>
+
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>City</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for data in student_data %}
+    <tr>
+        <td>{{ data.id}}</td>
+        <td>{{ data.name}}</td>
+        <td>{{ data.age}}</td>
+        <td>{{ data.fees}}</td>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+
+<h1>Teacher's Info</h1>
+
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>City</th>
+        <th>Pass Date</th>
+        <th>Marks</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for data in teacher_data %}
+    <tr>
+        <td>{{ data.id}}</td>
+        <td>{{ data.name}}</td>
+        <td>{{ data.age}}</td>
+        <td>{{ data.city}}</td>
+        <td>{{ data.date}}</td>
+        <td>{{ data.salary}}</td>
+        <td></td>
+        <td></td>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+
+<h1>Constructor Info</h1>
+
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Date</th>
+        <th>Payment</th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+    {% for data in constructor_data %}
+    <tr>
+        <td>{{ data.id}}</td>
+        <td>{{ data.name}}</td>
+        <td>{{ data.age}}</td>
+        <td>{{ data.date}}</td>
+        <td>{{ data.payment}}</td>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+{% endblock content %}

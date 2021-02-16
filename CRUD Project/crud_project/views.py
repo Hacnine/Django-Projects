@@ -39,6 +39,7 @@ def add_show(request):
 def edit_update(request, em_id):
     if request.method == 'POST':
         updates = User.objects.get(pk=em_id)
+
         form = UserRegistration(request.POST, instance=updates)
         if form.is_valid():
             form.save()

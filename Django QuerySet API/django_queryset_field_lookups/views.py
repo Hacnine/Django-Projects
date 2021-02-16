@@ -39,7 +39,5 @@ def lookup(request):
 
     student_data = Student.objects.filter(pass_date__quarter=4)
 
-
-
     print('SQL Query:', student_data.query)
     return render(request, 'lookup.html', {'student_data': student_data})
