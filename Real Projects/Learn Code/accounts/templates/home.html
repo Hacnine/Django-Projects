@@ -1,0 +1,28 @@
+{% extends 'base.html' %}{% load static %}
+{% block title %}
+{% endblock title %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row">
+        {% for course in courses %}
+        <div class="col-lg-4">
+            <div class="card shadow">
+                <img src="{{ course.course_image }}" class="card-img-top" alt="">
+                <div class="card-body">
+                    {% if course.is_premium %}
+                    <span class="badge badge-success">Premium</span>
+                    {% else %}
+                    <span class="badge badge-danger">Free</span>
+                    {% endif %}
+                    <h5>{{ course.course_name }}</h5>
+                    <p>{{ course.course_description | safe }}</p>
+                    <a href="{% url 'course' course.slug %}" class="btn btn-primary">View Course</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda cumque, deleniti dolores earum eum facere illo laudantium mollitia nihil nulla omnis optio provident quaerat quam quas quisquam, quos ratione sint.</p>
+{% endblock content %}

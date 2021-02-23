@@ -1,0 +1,10 @@
+{% extends 'base.html' %}{% load static %}
+{% block title %}
+{% endblock title %}
+
+{% block content %}
+{{ course }}
+{% for module in course_module %}
+{{ module.course_description }}
+{% endfor %}
+{% endblock content %}
