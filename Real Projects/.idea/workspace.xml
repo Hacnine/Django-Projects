@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85a9a26e-1eac-46a9-a241-fa09fe6dbefc" name="Default Changelist" comment="'Real Projects'">
+      <change afterPath="$PROJECT_DIR$/Al-Kitab/static/images/arrow-down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Al-Kitab/static/images/arrow-up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Al-Kitab/static/images/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/Django Cache.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/admins/__init__.py" beforeDir="false" />
@@ -25,6 +28,8 @@
       <change beforePath="$PROJECT_DIR$/../Customer Management System/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Customer Management System/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Al-Kitab/accounts/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Al-Kitab/accounts/templates/cart.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614093695814</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="'Real Projects'">
+      <created>1614130880685</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614130880685</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
