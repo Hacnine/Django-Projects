@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85a9a26e-1eac-46a9-a241-fa09fe6dbefc" name="Default Changelist" comment="'Real Projects'">
-      <change afterPath="$PROJECT_DIR$/Al-Kitab/static/images/arrow-down.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Al-Kitab/static/images/arrow-up.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Al-Kitab/static/images/img.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/Django Cache.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/admins/__init__.py" beforeDir="false" />
@@ -99,7 +96,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614130880685</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="'Real Projects'">
+      <created>1614227802985</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614227802985</updated>
+    </task>
+    <task id="LOCAL-00007" summary="'Real Projects'">
+      <created>1614231681190</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614231681190</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
