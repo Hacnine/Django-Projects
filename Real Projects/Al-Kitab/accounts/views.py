@@ -1,10 +1,12 @@
 from datetime import datetime, timedelta
 import stripe
 from django.shortcuts import render, redirect
+from .models import *
 
 
 def store(request):
-    context = {}
+    products = Product.objects.all()
+    context = {'products': products}
     return render(request, 'store.html', context)
 
 

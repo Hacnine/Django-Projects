@@ -1,8 +1,12 @@
 from django.contrib import admin
 
-# admin.site.register(Course)
-# admin.site.register(CourseModule)
-# admin.site.register(Profile)
+from accounts.models import *
+
+admin.site.register(Customer)
+admin.site.register(Product)
+admin.site.register(Order)
+admin.site.register(OrderItem)
+admin.site.register(ShippingAddress)
 
 # from .models import Page
 #

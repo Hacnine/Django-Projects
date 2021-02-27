@@ -119,13 +119,15 @@ import os
 
 STATIC_URL = '/static/'
 STATIC_DIR = BASE_DIR/'static'
-STATICFILES_DIRS = [STATIC_DIR]
 
-# MEDIA_ROOT = BASE_DIR / 'static/images'
+STATICFILES_DIRS = [STATIC_DIR]
+MEDIA_ROOT = BASE_DIR / 'static/images/product_images'
+
+MEDIA_URL = '/images/product_images/'
+
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # STATICFILES_DIR = {os.path.join(BASE_DIR, 'public/static')}
 #
 #
 # MEDIA_ROOT = os.path.join(BASE_DIR, 'public/static')
-# MEDIA_URL = '/media/'

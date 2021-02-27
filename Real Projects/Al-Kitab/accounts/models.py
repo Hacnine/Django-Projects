@@ -15,9 +15,18 @@ class Product(models.Model):
     name = models.CharField(max_length=200, null=True)
     price = models.FloatField()
     digital = models.BooleanField(default=True, null=True, blank=False)
+    image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.name
+
+    @property
+    def image_url(self):
+        try:
+            url = self.image.url
+        except:
+            url = ''
+        return url
 
 
 class Order(models.Model):
@@ -25,8 +34,6 @@ class Order(models.Model):
     date_ordered = models.DateTimeField(auto_now_add=True)
     complete = models.BooleanField(default=False, null=True, blank=True)
     transaction_id = models.CharField(max_length=200, null=True)
-
-    # image
 
     def __str__(self):
         return str(self.transaction_id)
@@ -44,7 +51,7 @@ class OrderItem(models.Model):
 
 class ShippingAddress(models.Model):
     customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True)
-    order = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True)
+    order = models.ForeignKey(Order, on_delete=models.SET_NULL, null=True)
     address = models.CharField(max_length=200, null=True)
     city = models.CharField(max_length=200, null=True)
     state = models.CharField(max_length=200, null=True)
