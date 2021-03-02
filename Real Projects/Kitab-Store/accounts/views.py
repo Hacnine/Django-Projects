@@ -1,5 +1,6 @@
 from datetime import datetime, timedelta
 import stripe
+import json
 from django.http import JsonResponse
 from django.shortcuts import render, redirect
 from .models import *
@@ -24,6 +25,10 @@ def cart(request):
     return render(request, 'cart.html', context)
 
 
+from django.views.decorators.csrf import csrf_exempt
+
+
+# @csrf_exempt
 def checkout(request):
     if request.user.is_authenticated:
         customer = request.user.customer
@@ -37,6 +42,27 @@ def checkout(request):
 
 
 def update_item(request):
+    data = json.loads(request.body)
+    productId = data['productId']
+    action = data['action']
+
+    print('action', action)
+    print('productId', productId)
+
+    customer = request.user.customer
+    product = Product.objects.get(id=productId)
+
+    order, created = Order.objects.get_or_create(customer=customer, complete=False)
+    orderItem, created = OrderItem.objects.get_or_create(order=order, product=product)
+
+    if action == 'add':
+        orderItem.quantity = orderItem.quantity + 1
+    elif action == 'remove':
+        orderItem.quantity = orderItem.quantity - 1
+
+    orderItem.save()
+    if orderItem.quantity <= 0:
+        orderItem.delete()
     return JsonResponse('It was added', safe=False)
 
 

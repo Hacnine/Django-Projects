@@ -5,14 +5,14 @@
 
 <div class="row">
     {% for product in products %}
-    <div class="col-lg-4">
-        <img class="thumbnail" src="{{ product.image_url}}" alt="">
+    <div class="col-lg-3">
+        <img width="254" height="350" src="{{ product.image_url}}" alt="">
         <div class="box-element product">
             <h6><strong>{{ product.name }}</strong></h6>
             <hr>
             <button data-product={{product.id}} data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
             <a href="" class="btn btn-outline-success">View</a>
-            <h4 style="display: inline-block; float: right">{{ product.price| floatformat }}</h4>
+            <h4 style="display: inline-block; float: right">{{ product.price| floatformat }} ৳</h4>
         </div>
     </div>
 

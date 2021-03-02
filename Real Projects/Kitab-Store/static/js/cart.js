@@ -21,12 +21,13 @@ for(var i = 0; i < updateBtns.length; i++){
 function updateUserOrder(productId, action)
 {
     console.log('User is Authenticated. Sending Data')
-    var url = '/update_item/'
 
+    var url = '/update_item/'
     fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
+      'X-CSRFToken': csrftoken,
     },
     body: JSON.stringify({'productId': productId, 'action': action})
     })
@@ -34,6 +35,6 @@ function updateUserOrder(productId, action)
     return response.json();
     })
     .then((data) => {
-    console.log('Data:', data)
+    console.log('')
     });
 }
