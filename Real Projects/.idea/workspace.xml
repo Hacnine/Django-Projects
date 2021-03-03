@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85a9a26e-1eac-46a9-a241-fa09fe6dbefc" name="Default Changelist" comment="'Projects'">
+      <change afterPath="$PROJECT_DIR$/Kitab-Store/static/images/product_images/136704596_795028251092587_4271881383015454754_n.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kitab-Store/static/images/product_images/148782579_814432152485530_2251639116550634382_o.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kitab-Store/static/images/product_images/149788209_814432055818873_8848365915891957005_o.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kitab-Store/static/images/product_images/149827309_814431989152213_3133864370432093233_o.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kitab-Store/static/images/product_images/Giving-back.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/Django Cache.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/admins/__init__.py" beforeDir="false" />
@@ -26,6 +31,11 @@
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kitab-Store/accounts/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/accounts/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kitab-Store/accounts/templates/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/accounts/templates/store.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kitab-Store/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kitab-Store/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kitab-Store/static/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/static/js/cart.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +59,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Kitab-Store" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Learn Code" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -137,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614559177497</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="'Projects'">
+      <created>1614647619574</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1614647619574</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
