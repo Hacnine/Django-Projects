@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85a9a26e-1eac-46a9-a241-fa09fe6dbefc" name="Default Changelist" comment="'Projects'">
-      <change afterPath="$PROJECT_DIR$/Kitab-Store/static/images/product_images/136704596_795028251092587_4271881383015454754_n.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kitab-Store/static/images/product_images/148782579_814432152485530_2251639116550634382_o.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kitab-Store/static/images/product_images/149788209_814432055818873_8848365915891957005_o.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kitab-Store/static/images/product_images/149827309_814431989152213_3133864370432093233_o.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kitab-Store/static/images/product_images/Giving-back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kitab-Store/accounts/migrations/0004_product_author.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kitab-Store/accounts/migrations/0005_auto_20210302_1659.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kitab-Store/static/images/product_images/57420758_430461067756392_4578328334584250368_o-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kitab-Store/static/images/product_images/pvwilat_nwn9tvw_1581862502.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/Django Cache.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/admins/__init__.py" beforeDir="false" />
@@ -31,7 +30,10 @@
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kitab-Store/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/accounts/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kitab-Store/accounts/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/accounts/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kitab-Store/accounts/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/accounts/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kitab-Store/accounts/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/accounts/templates/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kitab-Store/accounts/templates/store.html" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/accounts/templates/store.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kitab-Store/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/accounts/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Kitab-Store/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/db.sqlite3" afterDir="false" />
@@ -154,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614647619574</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="'Projects'">
+      <created>1614742346232</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1614742346232</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
