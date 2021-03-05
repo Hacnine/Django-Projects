@@ -34,12 +34,12 @@
                         <input class="form-control" type="text" name="zipcode" placeholder="Zip code..">
                     </div>
                     <div class="form-field">
-                        <input class="form-control" type="text" name="country" placeholder="Zip code..">
+                        <input class="form-control" type="text" name="country" placeholder="Country...">
                     </div>
                 </div>
 
                 <br>
-                <input id="form-button" class="btn btn-success btn-block" type="submit" value="Continue">
+                <input style="border-radius: 4px"  id="form-button" class="btn btn-success btn-block" type="submit" value="Continue">
             </form>
         </div>
 
@@ -47,8 +47,7 @@
 
         <div class="box-element hidden" id="payment-info">
             <small>Payment Options</small>
-            <button id="make-payment" class="btn btn-primary">Make Payment</button>
-
+            <button style="border-radius: 2px" id="make-payment" class="btn btn-primary">Make Payment</button>
         </div>
     </div>
 
@@ -78,7 +77,7 @@
 
 <script type="text/javascript">
         var shipping = '{{order.shipping}}'
-        var total = '{{'order.get_cart_total | floatformat: 2'}}'
+        var total = '{{order.get_cart_total}}'
 
         if(shipping == 'False'){
         document.getElementById('shipping-info').innerHTML = ''
@@ -97,52 +96,67 @@
         }
 
 
-    var form = document.getElementById('form')
+        var form = document.getElementById('form')
 
-    form.addEventListener('submit', function(e){
-    e.preventDefault()
-    console.log('Form Submitted...')
-    document.getElementById('form-button').classList.add('hidden')
-    document.getElementById('payment-info').classList.remove('hidden')
-    })
+        form.addEventListener('submit', function(e){
+        e.preventDefault()
+        console.log('Form Submitted...')
+        document.getElementById('form-button').classList.add('hidden')
+        document.getElementById('payment-info').classList.remove('hidden')
+        })
 
-    document.getElementById('make-payment').addEventListener('click', function(e){
-    submitFormData()
-    })
+        document.getElementById('make-payment').addEventListener('click', function(e){
+        submitFormData()
+        })
 
-    function submitFormData(){
-        console.log('Payment Button Clicked.')
+        function submitFormData()
+        {
+            console.log('Payment Button Clicked.')
 
-        var userFormData = {
-        'name': null,
-        'email': null,
-        'total': total,
-        }
+            var userFormData = {
+            'name': null,
+            'email': null,
+            'total': total,
+            }
 
-        var shippingInfo = {
-        'address': null,
-        'city': null,
-        'state': null,
-        'zipcode': null,
-        }
+            var shippingInfo = {
+            'address': null,
+            'city': null,
+            'state': null,
+            'zipcode': null,
+            }
 
-        if(shipping != 'False'){
-        shippingInfo.address = form.address.value
-        shippingInfo.city = form.city.value
-        shippingInfo.state = form.state.value
-        shippingInfo.zipcode = form.zipcode.value
+            if(shipping != 'False'){
+            shippingInfo.address = form.address.value
+            shippingInfo.city = form.city.value
+            shippingInfo.state = form.state.value
+            shippingInfo.zipcode = form.zipcode.value
 
-        }
+            }
 
-        if(user == 'AnonymousUser'){
-        shippingInfo.name = form.address.value
-        shippingInfo.email = form.city.value
-        }
+            if(user == 'AnonymousUser'){
+            shippingInfo.name = form.name.value
+            shippingInfo.email = form.email.value
+            }
 
-        }
+            var url = '/process_order/'
 
+            fetch(url, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': csrftoken,
+              },
+              body: JSON.stringify({'form': userFormData, 'shipping': shippingInfo})
+            })
+            .then((response) => response.json())
+            .then((data) => {
+              console.log('Success: ', data);
+              alert('Transaction completed');
+              window.location.href = "{% url 'store' %}"
+            })
 
-
+         }
 
 </script>
 
