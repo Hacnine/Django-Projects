@@ -1,8 +1,8 @@
 import json
 from datetime import datetime
-
 from django.http import JsonResponse
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
 
 from .models import *
 
@@ -40,7 +40,6 @@ def cart(request):
     return render(request, 'cart.html', context)
 
 
-# @csrf_exempt
 def checkout(request):
     if request.user.is_authenticated:
         customer = request.user.customer
@@ -82,6 +81,7 @@ def update_item(request):
     return JsonResponse('It was added', safe=False)
 
 
+@csrf_exempt
 def process_order(request):
     transaction_id = datetime.now().timestamp()
     data = json.loads(request.body)
@@ -105,8 +105,6 @@ def process_order(request):
                 state=data['shipping']['state'],
                 zipcode=data['shipping']['zipcode'],
             )
-
-
 
     else:
         print('User is not logged in.')
