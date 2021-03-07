@@ -1,5 +1,6 @@
 import json
 from datetime import datetime
+
 from django.http import JsonResponse
 from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
@@ -32,6 +33,14 @@ def cart(request):
         cart_items = order.get_cart_items
 
     else:
+        cart_cookie = json.loads(request.COOKIES['cart'])
+
+        # try:
+        #     cart_cookie = json.loads(request.COOKIES['cart'])
+        #
+        # except:
+        #     cart_cookie = {}
+        print('Cart Cookie', cart_cookie)
         items = []
         order = {'get_cart_items': 0, 'get_cart_total': 0, 'shipping': False}
         cart_items = order['get_cart_items']
