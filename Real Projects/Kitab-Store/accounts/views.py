@@ -6,60 +6,36 @@ from django.shortcuts import render
 from django.views.decorators.csrf import csrf_exempt
 
 from .models import *
+from .utils import *
 
 
 def store(request):
-    if request.user.is_authenticated:
-        customer = request.user.customer
-        order, created = Order.objects.get_or_create(customer=customer, complete=False)
-        items = order.orderitem_set.all()
-        cart_items = order.get_cart_items
-    else:
-        items = []
-        order = {'get_cart_items': 0, 'get_cart_total': 0, 'shipping': False}
-        cart_items = order['get_cart_items']
+    data = cart_data(request)
+    cart_items = data['cart_items']
 
     products = Product.objects.all()
     context = {'products': products, 'cart_items': cart_items}
-    print('cart_items', cart_items)
+    # print('cart_items', cart_items)
     return render(request, 'store.html', context)
 
 
 def cart(request):
-    if request.user.is_authenticated:
-        customer = request.user.customer
-        order, created = Order.objects.get_or_create(customer=customer, complete=False)
-        items = order.orderitem_set.all()
-        cart_items = order.get_cart_items
 
-    else:
-        cart_cookie = json.loads(request.COOKIES['cart'])
-
-        # try:
-        #     cart_cookie = json.loads(request.COOKIES['cart'])
-        #
-        # except:
-        #     cart_cookie = {}
-        print('Cart Cookie', cart_cookie)
-        items = []
-        order = {'get_cart_items': 0, 'get_cart_total': 0, 'shipping': False}
-        cart_items = order['get_cart_items']
+    data = cart_data(request)
+    cart_items = data['cart_items']
+    order = data['order']
+    items = data['items']
 
     context = {'items': items, 'order': order, 'cart_items': cart_items}
     return render(request, 'cart.html', context)
 
 
 def checkout(request):
-    if request.user.is_authenticated:
-        customer = request.user.customer
-        order, created = Order.objects.get_or_create(customer=customer, complete=False)
-        items = order.orderitem_set.all()
-        cart_items = order.get_cart_items
 
-    else:
-        items = []
-        order = {'get_cart_items': 0, 'get_cart_total': 0, 'shipping': False}
-        cart_items = order['get_cart_items']
+    data = cart_data(request)
+    cart_items = data['cart_items']
+    order = data['order']
+    items = data['items']
 
     context = {'items': items, 'order': order, 'cart_items': cart_items}
     return render(request, 'checkout.html', context)
