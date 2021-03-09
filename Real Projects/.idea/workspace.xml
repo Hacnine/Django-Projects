@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85a9a26e-1eac-46a9-a241-fa09fe6dbefc" name="Default Changelist" comment="'Projects'">
-      <change afterPath="$PROJECT_DIR$/Kitab-Store/accounts/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Kitab-Store/static/images/product_images/deebc5388_163718.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/Django Cache.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/admins/__init__.py" beforeDir="false" />
@@ -28,8 +26,6 @@
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kitab-Store/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/accounts/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Kitab-Store/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Kitab-Store/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615091503224</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="'Projects'">
+      <created>1615175021651</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1615175021651</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
