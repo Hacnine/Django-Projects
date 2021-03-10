@@ -70,6 +70,7 @@ def update_item(request):
 def process_order(request):
     transaction_id = datetime.now().timestamp()
     data = json.loads(request.body)
+    print('Data', data)
     if request.user.is_authenticated:
         customer = request.user.customer
         order, created = Order.objects.get_or_create(customer=customer, complete=False)

@@ -66,8 +66,8 @@ def guest_order(request, data):
     print('User is not logged in.')
     print('COOKIES', request.COOKIES)
 
-    name = data['form']['name']
-    email = data['form']['email']
+    name = data['shipping']['name']
+    email = data['shipping']['email']
     print('name', name)
     print('email', email)
 
