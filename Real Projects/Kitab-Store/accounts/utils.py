@@ -69,7 +69,7 @@ def guest_order(request, data):
     name = data['shipping']['name']
     email = data['shipping']['email']
     print('name', name)
-    print('email', email)
+    # print('email', email)
 
     cookie_data = cookie_cart(request)
     items = cookie_data['items']
