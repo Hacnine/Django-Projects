@@ -857,6 +857,8 @@
       <change afterPath="$PROJECT_DIR$/../Ecom/venv/Lib/site-packages/sqlparse/filters/tokens.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Ecom/venv/Lib/site-packages/sqlparse/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Ecom/venv/Scripts/django-admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kitab-Store/accounts/migrations/0008_product_customer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kitab-Store/accounts/migrations/0009_remove_product_customer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/Django Cache.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/admins/__init__.py" beforeDir="false" />
@@ -1071,7 +1073,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615958663831</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="'Projects'">
+      <created>1616045466994</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1616045466994</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
