@@ -23,7 +23,7 @@ def cookie_cart(request):
             total = product.price * cart_cookie[i]['quantity']
 
             order['get_cart_total'] += total
-            order['get_cart_items'] = cart_cookie[i]['quantity']
+            order['get_cart_items'] += cart_cookie[i]['quantity']
 
             item = {
                 'product': {
