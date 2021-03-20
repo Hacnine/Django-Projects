@@ -90,7 +90,6 @@ def process_order(request):
         order.complete = True
     order.save()
 
-    order.save()
     if order.shipping == True:
         ShippingAddress.objects.create(
             customer=customer,

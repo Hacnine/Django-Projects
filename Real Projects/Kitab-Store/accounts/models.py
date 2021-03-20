@@ -8,7 +8,7 @@ class Customer(models.Model):
     email = models.EmailField(max_length=200, null=True)
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
 
 class Product(models.Model):
@@ -19,7 +19,7 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
 
     def __str__(self):
-        return self.name
+        return str(self.name)
 
     @property
     def image_url(self):
@@ -101,4 +101,4 @@ class ShippingAddress(models.Model):
 
 
 
-##############
+############
