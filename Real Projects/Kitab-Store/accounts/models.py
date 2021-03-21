@@ -100,5 +100,3 @@ class ShippingAddress(models.Model):
 
 
 
-
-############

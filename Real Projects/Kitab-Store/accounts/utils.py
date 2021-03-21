@@ -13,6 +13,7 @@ def cookie_cart(request):
     print('Cart Cookie', cart_cookie)
     items = []
     order = {'get_cart_items': 0, 'get_cart_total': 0, 'shipping': False}
+    order = {'get_cart_items': 0, 'get_cart_total': 0, 'shipping': False}
     cart_items = order['get_cart_items']
 
     for i in cart_cookie:
