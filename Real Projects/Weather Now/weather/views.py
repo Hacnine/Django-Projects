@@ -1,10 +1,27 @@
-from datetime import datetime, timedelta
-import stripe
-from django.shortcuts import render, redirect
+from django.shortcuts import render
+import requests
+from .models import *
 
 
 def city_weather(request):
-    context = {}
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=0cae9690544d21d158d36e65e5dabcd4'
+    weather = []
+    city_name = City.objects.all()
+    for city in city_name:
+
+        req = requests.get(url.format(city)).json()
+        # print(req)
+        city_weather = {
+            'city': city,
+            'temperature': req['main']['temp'],
+            'description': req['weather'][0]['description'],
+            'icon': req['weather'][0]['icon'],
+            # 'pressure': req['main']['pressure']
+
+        }
+        weather.append(city_weather)
+        print(weather)
+        context = {'weathers': weather}
     return render(request, 'weather.html', context)
 
 

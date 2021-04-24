@@ -857,6 +857,7 @@
       <change afterPath="$PROJECT_DIR$/../Ecom/venv/Lib/site-packages/sqlparse/filters/tokens.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Ecom/venv/Lib/site-packages/sqlparse/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Ecom/venv/Scripts/django-admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Weather Now/weather/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/Django Cache.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/admins/__init__.py" beforeDir="false" />
@@ -881,6 +882,11 @@
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weather Now/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Weather Now/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weather Now/templates/weather.html" beforeDir="false" afterPath="$PROJECT_DIR$/Weather Now/templates/weather.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weather Now/weather/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Weather Now/weather/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weather Now/weather/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Weather Now/weather/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weather Now/weather/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Weather Now/weather/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -911,8 +917,35 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Django Rest API/Serializer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="CV Cover Letter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Real Projects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$APPLICATION_CONFIG_DIR$/scratches" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$APPLICATION_CONFIG_DIR$/scratches/CV Cover Letter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.CV Cover Letter" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -1119,7 +1152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616294310915</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="'Projects'">
+      <created>1618935679118</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1618935679118</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
