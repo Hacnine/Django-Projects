@@ -4,7 +4,7 @@ from .models import *
 
 
 def city_weather(request):
-    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid=0cae9690544d21d158d36e65e5dabcd4'
+    url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=imperial&appid='
     weather = []
     city_name = City.objects.all()
     for city in city_name:
