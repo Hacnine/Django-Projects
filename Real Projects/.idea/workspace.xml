@@ -857,6 +857,7 @@
       <change afterPath="$PROJECT_DIR$/../Ecom/venv/Lib/site-packages/sqlparse/filters/tokens.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Ecom/venv/Lib/site-packages/sqlparse/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Ecom/venv/Scripts/django-admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Weather Now/weather/form.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/Django Cache.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/admins/__init__.py" beforeDir="false" />
@@ -881,12 +882,21 @@
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weather Now/templates/weather.html" beforeDir="false" afterPath="$PROJECT_DIR$/Weather Now/templates/weather.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Weather Now/weather/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Weather Now/weather/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Weather Now/weather/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Weather Now/weather/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -912,7 +922,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Weather Now" />
   </component>
   <component name="RunManager">
     <configuration name="CV Cover Letter" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -1161,7 +1171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619256961021</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="'Projects'">
+      <created>1619265895304</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1619265895304</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
