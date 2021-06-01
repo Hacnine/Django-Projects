@@ -32,7 +32,7 @@ class Migration(migrations.Migration):
                 ('course_description', ckeditor.fields.RichTextField()),
                 ('video_url', models.URLField(max_length=300)),
                 ('can_view', models.BooleanField(default=False)),
-                ('course', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='accounts.course')),
+                ('course', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='store.course')),
             ],
         ),
     ]

@@ -10,8 +10,7 @@ def city_weather(request):
         form = CityForm(request.POST)
         if form.is_valid():
             form.save()
-    else:
-        form = CityForm()
+    form = CityForm()
 
     weather = []
     city_name = City.objects.all()
