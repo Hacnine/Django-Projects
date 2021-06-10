@@ -857,126 +857,6 @@
       <change afterPath="$PROJECT_DIR$/../Ecom/venv/Lib/site-packages/sqlparse/filters/tokens.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Ecom/venv/Lib/site-packages/sqlparse/utils.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Ecom/venv/Scripts/django-admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/css/all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/css/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/banner/b1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/banner/b2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/banner/b3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/banner/b4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/emptycart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/payavail/bj.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/payavail/cc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/payavail/nb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/payavail/upi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/payavail/upi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/payment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/product/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/product/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/product/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/product/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/product/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/product/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/product/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/product/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/product/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/product/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/product/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/images/product/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/js/all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/js/myscript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/static/app/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/templates/app/address.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/templates/app/addtocart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/templates/app/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/templates/app/buynow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/templates/app/changepassword.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/templates/app/checkout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/templates/app/customerregistration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/templates/app/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/templates/app/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/templates/app/mobile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/templates/app/orders.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/templates/app/productdetail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/templates/app/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shop Mart/app/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/.idea/shoppinglyx-main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/Screenshots/Cart.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/Screenshots/Home.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/Screenshots/ProductDetail.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/Screenshots/User.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/css/all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/css/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/banner/b1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/banner/b2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/banner/b3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/banner/b4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/emptycart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/payavail/bj.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/payavail/cc.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/payavail/nb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/payavail/upi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/payavail/upi.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/payment.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/product/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/product/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/product/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/product/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/product/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/product/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/product/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/product/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/product/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/product/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/product/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/images/product/9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/js/all.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/js/myscript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/static/app/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/templates/app/address.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/templates/app/addtocart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/templates/app/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/templates/app/buynow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/templates/app/changepassword.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/templates/app/checkout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/templates/app/customerregistration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/templates/app/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/templates/app/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/templates/app/mobile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/templates/app/orders.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/templates/app/productdetail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/templates/app/profile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/app/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/shoppinglyx/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/shoppinglyx/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/shoppinglyx/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/shoppinglyx/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shoppinglyx-main/shoppinglyx/wsgi.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/Django Cache.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A Skeleton/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../A Skeleton/admins/__init__.py" beforeDir="false" />
@@ -1000,9 +880,6 @@
       <change beforePath="$PROJECT_DIR$/../Customer Management System/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Customer Management System/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Django Stripe Payments/django_stripe_payments/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop Mart/admin/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop Mart/admin/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shop Mart/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Shop Mart/store/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1337,7 +1214,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622543698483</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="'Projects'">
+      <created>1623084165724</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1623084165724</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
